@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Singku Cafe | Customers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+    <!-- ✅ Navbar -->
+    <nav>
+        <div class="logo">
+        <a href="index.html">
+            <img src="images/icon1.png" alt="Singku Cafe Logo">
+            <span class="logo-text">Singku</span>
+        </a>
+        </div>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="feature.html">Features</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="customers.html" class="active">Customers</a></li>
+        <li><a href="messages.html">Messages</a></li>
+        </ul>
+    </nav>
+
+    <!-- ✅ Header -->
+    <header class="hero menu-hero" style="background: url('images/couple.png') center/cover no-repeat;">
+        <div class="hero-content">
+        <h1>Customer List</h1>
+        <p>Explore our valued customers and their connection with Singku Café</p>
+        </div>
+    </header>
+
+    <!-- ✅ Customer Table Section -->
+    <section class="menu" style="background:#f9f6f1; text-align:left; padding:60px 12%;">
+        <div style="max-width:900px; margin:0 auto;">
+        
+        <!-- Search + Filter -->
+        <div style="display:flex; justify-content:center; align-items:center; gap:12px; margin-bottom:25px; flex-wrap:wrap;">
+            <div class="search-bar">
+            <input type="text" placeholder="Search customers... (mockup only)">
+            <button type="button" class="search-btn">🔍</button>
+            </div>
+            <select id="customer-filter" style="padding:10px 12px; border-radius:8px; border:1px solid #ddd; background-color:#fff;">
+            <option value="all">All</option>
+            <option value="loyal">Loyal (>5 orders)</option>
+            <option value="new">New Customers</option>
+            </select>
+        </div>
+
+        <!-- Mockup Customer Data -->
+        <div class="api-table-container">
+            <table class="api-table">
+            <thead>
+                <tr>
+                <th>Customer Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Orders</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>Claire Dela Cruz</td>
+                <td>claire@gmail.com</td>
+                <td>0917-123-4567</td>
+                <td>7</td>
+                </tr>
+                <tr>
+                <td>Catherin Laguda</td>
+                <td>catherine@gmail.com</td>
+                <td>0921-987-6543</td>
+                <td>4</td>
+                </tr>
+                <tr>
+                <td>Tyra Anne</td>
+                <td>tyraanne@gmail.com</td>
+                <td>0995-555-8723</td>
+                <td>10</td>
+                </tr>
+                <tr>
+                <td>Carla Marie</td>
+                <td>carla@gmail.com</td>
+                <td>0918-333-2211</td>
+                <td>6</td>
+                </tr>
+                <tr>
+                <td>Anne Marie</td>
+                <td>anne@gmail.com</td>
+                <td>0907-998-1100</td>
+                <td>3</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        </div>
+    </section>
+
+    <!-- ✅ Footer -->
+    <footer>
+        <div class="footer-content">
+        <div class="footer-section">
+            <h3>Business Hours</h3>
+            <p>Mon - Sat: 10am - 10pm</p>
+            <p>Sunday: 10am - 9pm</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: <a href="mailto:singkucafe@gmail.com">singkucafe@gmail.com</a></p>
+            <p>Phone: 0994 417 2569</p>
+            <p>Address: 5G Bldg, Nepomuceno Street, Brgy. Santo Rosario, Angeles City, Philippines</p>
+            <div class="socials">
+            <a href="https://www.facebook.com/singku.cafe"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/singku.cafe"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="mailto:singkucafe@gmail.com"><img src="images/gmail.png" alt="Email"></a>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+        </div>
+
+        <div class="footer-bottom">
+        <p>&copy; 2025 Singku Cafe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

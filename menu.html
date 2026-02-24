@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Singku Cafe | Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">
+    <a href="index.html">
+    <img src="images/icon1.png" alt="Singku Cafe Logo">
+    <span class="logo-text">Singku</span>
+  </a>
+</div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="feature.html">Features</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="customers.html">Customers</a></li>
+        <li><a href="messages.html" class="active">Messages</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero for Menu -->
+  <header class="hero menu-hero">
+    <div class="hero-content">
+      <h1>Our Menu</h1>
+      <p>Hand-crafted drinks & freshly baked treats, made with love.</p>
+    </div>
+  </header>
+
+  <!-- Menu Section -->
+  <section class="menu" id="menu">
+    <h2>Discover Our Favorites</h2>
+    <p>Browse our best-selling coffee, pastries, and treats.</p>
+
+    <!-- Search and Filter -->
+    <div class="menu-controls">
+      <input type="text" id="search" placeholder="Search menu...">
+      <select id="filter">
+        <option value="all">All Categories</option>
+        <option value="signatures">Signatures</option>
+        <option value="coffee">Coffee</option>
+        <option value="non-coffee">Non-Coffee</option>
+        <option value="food">Food</option>
+      </select>
+      <select id="sort">
+        <option value="default">Sort by</option>
+        <option value="price-low">Price: Low to High</option>
+        <option value="price-high">Price: High to Low</option>
+      </select>
+    </div>
+
+    <!-- Menu Items -->
+    <div class="menu-items">
+
+      <!-- Signatures -->
+      <div class="menu-card" data-category="signatures" data-price="180">
+        <img src="images/drinks/singku.png" alt="Singku Coffee">
+        <h3>Singku Coffee</h3>
+        <p>Our signature bold espresso blend with a local twist.</p>
+        <span>₱180</span>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="menu-card" data-category="signatures" data-price="190">
+        <img src="images/drinks/black cloud.png" alt="Black Cloud Panucha">
+        <h3>Black Cloud Panucha</h3>
+        <p>Dark espresso infused with rich local panucha sweetness.</p>
+        <span>₱190</span>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="menu-card" data-category="signatures" data-price="190">
+        <img src="images/drinks/spanish.png" alt="Spanish Latte">
+        <h3>Spanish Latte</h3>
+        <p>Creamy and smooth espresso with caramelized milk.</p>
+        <span>₱190</span>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="menu-card" data-category="signatures" data-price="200">
+        <img src="images/drinks/dirtyoreo.png" alt="Dirty Oreo Foam">
+        <h3>Dirty Oreo Foam</h3>
+        <p>Espresso topped with crushed Oreos and creamy foam.</p>
+        <span>₱200</span>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="menu-card" data-category="signatures" data-price="190">
+        <img src="images/drinks/seasalt.png" alt="Sea Salt Latte">
+        <h3>Sea Salt Latte</h3>
+        <p>Silky espresso with milk, balanced by a hint of sea salt.</p>
+        <span>₱190</span>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="menu-card" data-category="signatures" data-price="200">
+        <img src="images/drinks/oreo caramel.png" alt="Oreo Caramel">
+        <h3>Oreo Caramel</h3>
+        <p>Espresso blended with Oreo bits and caramel drizzle.</p>
+        <span>₱200</span>
+        <button>Add to Cart</button>
+      </div>
+
+      <!-- Coffee -->
+      <div class="menu-card" data-category="coffee" data-price="150">
+        <img src="images/drinks/long black.png" alt="Long Black">
+        <h3>Long Black</h3>
+        <p>Classic strong and bold black coffee.</p>
+        <span>₱150</span>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="menu-card" data-category="coffee" data-price="150">
+        <img src="images/drinks/latte.png" alt="Latte">
+        <h3>Latte</h3>
+        <p>Smooth espresso blended with creamy steamed milk.</p>
+        <span>₱150</span>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="menu-card" data-category="coffee" data-price="160">
+        <img src="images/drinks/white mocha.png" alt="White Mocha">
+        <h3>White Mocha</h3>
+        <p>Espresso mixed with sweet white chocolate and milk.</p>
+        <span>₱160</span>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="menu-card" data-category="coffee" data-price="160">
+        <img src="images/drinks/caramel latte.png" alt="Caramel Latte">
+        <h3>Caramel Latte</h3>
+        <p>Espresso sweetened with buttery caramel syrup.</p>
+        <span>₱160</span>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="menu-card" data-category="coffee" data-price="160">
+        <img src="images/drinks/mocha latte.png" alt="Mocha Latte">
+        <h3>Mocha Latte</h3>
+        <p>Espresso blended with rich chocolate and milk.</p>
+        <span>₱160</span>
+        <button>Add to Cart</button>
+      </div>
+
+      <!-- Non-Coffee -->
+      <div class="menu-card" data-category="non-coffee" data-price="160">
+        <img src="images/drinks/matcha.png" alt="Matcha">
+        <h3>Matcha</h3>
+        <p>Earthy, creamy, and energizing Japanese green tea blend.</p>
+        <span>₱160</span>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="menu-card" data-category="non-coffee" data-price="190">
+        <img src="images/drinks/biscoff.png" alt="Biscoff Latte">
+        <h3>Biscoff Latte</h3>
+        <p>Sweet and spiced latte with Biscoff cookie flavor.</p>
+        <span>₱190</span>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="menu-card" data-category="non-coffee" data-price="200">
+        <img src="images/drinks/redvelvet.png" alt="Red Velvet">
+        <h3>Red Velvet</h3>
+        <p>Smooth, velvety drink with a hint of cocoa.</p>
+        <span>₱200</span>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="menu-card" data-category="non-coffee" data-price="200">
+        <img src="images/drinks/oreo matcha.png" alt="Oreo Matcha">
+        <h3>Oreo Matcha</h3>
+        <p>Matcha latte topped with Oreo crumble.</p>
+        <span>₱200</span>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="menu-card" data-category="non-coffee" data-price="160">
+        <img src="images/drinks/horchata.png" alt="Horchata">
+        <h3>Horchata</h3>
+        <p>Sweet rice-based drink with cinnamon notes.</p>
+        <span>₱160</span>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="menu-card" data-category="non-coffee" data-price="160">
+        <img src="images/drinks/strawberry.png" alt="Strawberry Lemonade">
+        <h3>Strawberry Lemonade</h3>
+        <p>Fruity and refreshing, perfect for sunny days.</p>
+        <span>₱160</span>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="menu-card" data-category="non-coffee" data-price="160">
+        <img src="images/drinks/strawberry.png" alt="Strawberry Lychee">
+        <h3>Strawberry Lychee</h3>
+        <p>Sweet blend of strawberry and tropical lychee.</p>
+        <span>₱160</span>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="menu-card" data-category="non-coffee" data-price="160">
+        <img src="images/drinks/kiwi lemonade.png" alt="Kiwi Lemonade">
+        <h3>Kiwi Lemonade</h3>
+        <p>Refreshing lemonade with a zesty kiwi twist.</p>
+        <span>₱160</span>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="menu-card" data-category="non-coffee" data-price="180">
+        <img src="images/drinks/thai lychee.png" alt="Thai Lychee">
+        <h3>Thai Lychee</h3>
+        <p>Exotic blend of Thai tea and sweet lychee.</p>
+        <span>₱180</span>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="menu-card" data-category="non-coffee" data-price="180">
+        <img src="images/drinks/thai lychee.png" alt="Pineapple Passionfruit">
+        <h3>Pineapple Passionfruit</h3>
+        <p>Tropical mix of pineapple and passionfruit.</p>
+        <span>₱180</span>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="menu-card" data-category="non-coffee" data-price="180">
+        <img src="images/drinks/cascara.png" alt="Cascara">
+        <h3>Cascara</h3>
+        <p>Lightly sweet, tea-like drink from coffee cherry husks.</p>
+        <span>₱180</span>
+        <button>Add to Cart</button>
+      </div>
+
+      <!-- Food -->
+      <div class="menu-card" data-category="food" data-price="250">
+        <img src="images/drinks/soy pepper.png" alt="Soy Pepper Beef">
+        <h3>Soy Pepper Beef</h3>
+        <p>Stir-fried beef strips with soy and black pepper glaze.</p>
+        <span>₱250</span>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="menu-card" data-category="food" data-price="200">
+        <img src="images/drinks/chicken pesto.png" alt="Chicken Pesto">
+        <h3>Chicken Pesto</h3>
+        <p>Grilled chicken served with creamy basil pesto.</p>
+        <span>₱200</span>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="menu-card" data-category="food" data-price="200">
+        <img src="images/drinks/chicken outlet.png" alt="Chicken Cutlet">
+        <h3>Chicken Cutlet</h3>
+        <p>Crispy breaded chicken cutlet with dipping sauce.</p>
+        <span>₱200</span>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="menu-card" data-category="food" data-price="250">
+        <img src="images/drinks/kung pao.png" alt="Kung Pao Karaage">
+        <h3>Kung Pao Karaage</h3>
+        <p>Japanese fried chicken tossed in spicy Kung Pao sauce.</p>
+        <span>₱250</span>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="menu-card" data-category="food" data-price="150">
+        <img src="images/drinks/hungarian.png" alt="Hungarian Sausage">
+        <h3>Hungarian Sausage</h3>
+        <p>Smoky and savory sausage with a hint of spice, served hot and flavorful.</p>
+        <span>₱150</span>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="menu-card" data-category="food" data-price="200">
+        <img src="images/drinks/fish.png" alt="Fish Fillet">
+        <h3>Fish Fillet</h3>
+        <p>Crispy golden-brown fillet with tender fish inside, paired with a light seasoning.</p>
+        <span>₱200</span>
+        <button>Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Cart Section -->
+  <section class="cart" id="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: ₱<span id="total">0</span></p>
+    <button id="checkout">Checkout</button>
+  </section>
+
+  <!-- Mock API: Product Data -->
+<section class="api-section">
+  <h2>☕ PRODUCT INFORMATION</h2>
+  <div id="product-container" class="api-grid"></div>
+</section>
+
+
+    <section class="search-section">
+  <div class="search-bar">
+    <input type="text" placeholder="Search products... (mockup only)">
+    <button type="button" class="search-btn">Search</button>
+  </div>
+</section>
+
+<div class="api-table-container">
+  <table class="api-table">
+    <thead>
+      <tr>
+        <th>Product Name</th>
+        <th>Price</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Caramel Macchiato</td>
+        <td>₱150</td>
+        <td>Espresso with milk and caramel syrup</td>
+      </tr>
+      <tr>
+        <td>Iced Latte</td>
+        <td>₱130</td>
+        <td>Cold espresso with milk and ice</td>
+      </tr>
+      <tr>
+        <td>Matcha Latte</td>
+        <td>₱145</td>
+        <td>Green tea blended with creamy milk</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+  <!-- Footer -->
+<footer>
+  <div class="footer-content">
+    <!-- Opening Hours -->
+    <div class="footer-section">
+      <h3>Business Hours</h3>
+      <p>Mon - Sat: 10am - 10pm</p>
+      <p>Sunday: 10am - 9pm</p>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-section">
+      <h3>Contact Us</h3>
+      <p>Email: <a href="mailto:singkucafe@gmail.com">singkucafe@gmail.com</a></p>
+      <p>Phone: 0994 417 2569</p>
+      <p>Address: 5G Bldg, Nepomuceno Street, Brgy. Santo Rosario,, Angeles City, Philippines</p>
+      <div class="socials">
+        <a href="https://www.facebook.com/singku.cafe"><img src="images/facebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/singku.cafe/?fbclid=IwY2xjawM2K0NleHRuA2FlbQIxMABicmlkETFhMW1pSE1BQTBnODRiaHU0AR7h_6TeqT-Hyn4rFOlrCOiD1T8PHvTmjLjObmujNl2sSKU7U651dTohC2NsCw_aem_0iNwwlS-cYHZ7Qpt2wZp6Q#"><img src="images/instagram.png" alt="Instagram"></a>
+        <a href="mailto:singku.cafe@gmail.com"><img src="images/gmail.png" alt="Email"></a>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Singku Cafe. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>

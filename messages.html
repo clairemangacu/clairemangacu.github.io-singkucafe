@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Singku Cafe | Messages</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .menu { background:#f9f6f1; text-align:left; padding:40px 12%; }
+        .message-card {
+        background:#fff;
+        border:1px solid #ddd;
+        border-radius:10px;
+        padding:15px 20px;
+        box-shadow:0 2px 6px rgba(0,0,0,0.08);
+        }
+        .message-card h3 {
+        margin:0 0 6px;
+        color:#333;
+        font-size:1.1rem;
+        }
+        .message-card p {
+        margin:4px 0;
+        color:#555;
+        font-size:0.95rem;
+        }
+        .api-section {
+        background:#fff;
+        padding:40px 12%;
+        text-align:left;
+        }
+        .api-section h2 {
+        color:#000;
+        font-size:1.6rem;
+        margin-bottom:20px;
+        }
+        .api-list {
+        background:#fafafa;
+        border-radius:10px;
+        padding:15px;
+        border:1px solid #ddd;
+        }
+    </style>
+    </head>
+
+    <body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+        <a href="index.html">
+            <img src="images/icon1.png" alt="Singku Cafe Logo">
+            <span class="logo-text">Singku</span>
+        </a>
+        </div>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="feature.html">Features</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="customers.html">Customers</a></li>
+        <li><a href="messages.html" class="active">Messages</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header class="hero menu-hero" style="background: url('images/f1.png') center/cover no-repeat;">
+        <div class="hero-content">
+        <h1>Contact Messages</h1>
+        <p>Here at Singku Café, this page displays messages and feedback from our valued customers. You can browse or search through their inquiries below.</p>
+        </div>
+    </header>
+
+    <!-- Search Bar + Message List -->
+    <section class="menu">
+        <div style="max-width:1100px; margin:0 auto;">
+        <!-- ✅ Customer-style search section -->
+        <div style="display:flex; justify-content:space-between; align-items:center; gap:16px; margin-bottom:18px; flex-wrap:wrap;">
+            <input id="messages-search" type="text" placeholder="Search messages by name, email, or content..." 
+            style="flex:1; padding:10px 12px; border-radius:8px; border:1px solid #ddd;">
+            <select id="messages-filter" style="padding:10px; border-radius:8px; border:1px solid #ddd;">
+            <option value="all">All</option>
+            <option value="positive">Positive Feedback</option>
+            <option value="inquiry">Inquiries</option>
+            <option value="suggestion">Suggestions</option>
+            </select>
+        </div>
+
+        <!-- Message Cards -->
+        <div id="messages-list" style="display:flex; flex-direction:column; gap:12px;">
+            <div class="message-card">
+            <h3>☕ Maria Santos</h3>
+            <p><strong>Email:</strong> maria.santos@gmail.com</p>
+            <p><strong>Message:</strong> I really loved your caramel macchiato! Hope you add a sugar-free version soon. 💛</p>
+            <p><small>Received on: October 12, 2025</small></p>
+            </div>
+
+            <div class="message-card">
+            <h3>☕ Juan Dela Cruz</h3>
+            <p><strong>Email:</strong> juandelacruz@yahoo.com</p>
+            <p><strong>Message:</strong> Can I book a table for 6 people this Friday evening? Thank you!</p>
+            <p><small>Received on: October 11, 2025</small></p>
+            </div>
+
+            <div class="message-card">
+            <h3>☕ Alyssa Vergara</h3>
+            <p><strong>Email:</strong> alyssa.vrg@gmail.com</p>
+            <p><strong>Message:</strong> Your café ambiance is amazing. Looking forward to your new drink of the month!</p>
+            <p><small>Received on: October 10, 2025</small></p>
+            </div>
+        </div>
+
+        <p id="messages-empty" style="display:none; margin-top:12px; color:#666;">No messages found.</p>
+        </div>
+    </section>
+
+
+
+    <!-- Mock API Section -->
+    <section class="api-section">
+        <h2>💬 Customer Feedbacks (Message API)</h2>
+        <div id="message-container" class="api-list">
+        <p><strong>1.</strong> <em>“Your café is my favorite weekend spot!”</em> – <b>Chloe Tan</b></p>
+        <p><strong>2.</strong> <em>“The staff are very friendly and accommodating.”</em> – <b>Marco Cruz</b></p>
+        <p><strong>3.</strong> <em>“I love the cozy aesthetic — please open a branch in San Fernando!”</em> – <b>Ella Santos</b></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+        <div class="footer-section">
+            <h3>Business Hours</h3>
+            <p>Mon - Sat: 10am - 10pm</p>
+            <p>Sunday: 10am - 9pm</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: <a href="mailto:singkucafe@gmail.com">singkucafe@gmail.com</a></p>
+            <p>Phone: 0994 417 2569</p>
+            <p>Address: 5G Bldg, Nepomuceno Street, Brgy. Santo Rosario, Angeles City, Philippines</p>
+            <div class="socials">
+            <a href="https://www.facebook.com/singku.cafe"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/singku.cafe"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="mailto:singkucafe@gmail.com"><img src="images/gmail.png" alt="Email"></a>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+        </div>
+
+        <div class="footer-bottom">
+        <p>&copy; 2025 Singku Cafe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
